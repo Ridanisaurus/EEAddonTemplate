@@ -9,8 +9,8 @@ import net.minecraft.data.DataGenerator;
 
 import java.util.List;
 
-@EmendatusPluginReference(modid = EEMODAddon.MODID, name = "EE MOD addon config")
-public class MODPlugin implements IEmendatusPlugin {
+@EmendatusPluginReference(modid = EEMODAddon.MOD_ID, name = "config")
+public class EEMODPlugin implements IEmendatusPlugin {
 	@Override
 	public void load(EmendatusDataRegistry emendatusDataRegistry) {
 
@@ -22,7 +22,7 @@ public class MODPlugin implements IEmendatusPlugin {
 	}
 
 	@Override
-	public void registerDynamicDataGen(DataGenerator dataGenerator, EmendatusDataRegistry emendatusDataRegistry) {
+	public void registerDynamicDataGen(DataGenerator generator, EmendatusDataRegistry registry) {
 
 	}
 
